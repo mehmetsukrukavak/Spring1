@@ -5,7 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <!--    scope -> singleton create only ones, prototype everytime creates-->
-    <bean id="alien" class="com.mehmetsukrukavak.Alien" scope="prototype">
+<!--    <bean id="alien" class="com.mehmetsukrukavak.Alien" scope="prototype"></bean>-->
+    <bean id="alien" class="com.mehmetsukrukavak.Alien">
+        <property name="age" value="18"></property>
     </bean>
     <bean id="laptop" class="com.mehmetsukrukavak.Laptop">
     </bean>
