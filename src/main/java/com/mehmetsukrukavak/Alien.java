@@ -1,9 +1,21 @@
 package com.mehmetsukrukavak;
 
+import java.beans.ConstructorProperties;
+
 public class Alien {
 
     private int age;
     private Laptop laptop;
+
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public int getAge() {
         return age;
@@ -24,6 +36,13 @@ public class Alien {
 
     public Alien() {
         System.out.println("Object Created.");
+    }
+
+    @ConstructorProperties( {"name", "laptop"})
+    public Alien(String name, Laptop laptop) {
+        System.out.println("Para Object Created.");
+        this.name = name;
+        this.laptop = laptop;
     }
 
     public void code(){

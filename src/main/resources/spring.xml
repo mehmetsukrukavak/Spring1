@@ -8,7 +8,11 @@
 <!--    <bean id="alien" class="com.mehmetsukrukavak.Alien" scope="prototype"></bean>-->
     <bean id="alien" class="com.mehmetsukrukavak.Alien">
         <property name="age" value="18"></property>
-        <property name="laptop" ref="laptop"></property>
+<!--        <property name="laptop" ref="laptop"></property>-->
+<!--        <constructor-arg value="Mehmet" />-->
+<!--        <constructor-arg ref="laptop" />-->
+        <constructor-arg name="name" value="Mehmet" />
+        <constructor-arg name="laptop" ref="laptop" />
     </bean>
     <bean id="laptop" class="com.mehmetsukrukavak.Laptop">
     </bean>
