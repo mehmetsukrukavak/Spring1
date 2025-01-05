@@ -9,15 +9,15 @@
     <bean id="alien" class="com.mehmetsukrukavak.Alien" autowire="byType">
         <property name="name" value="Mehmet" />
         <property name="age" value="18" />
-<!--        <property name="computer" ref="desktop" />-->
+        <property name="computer" ref="laptop" />
         <!--        <property name="laptop" ref="laptop"></property>-->
 <!--        <constructor-arg value="Mehmet" />-->
 <!--        <constructor-arg ref="laptop" />-->
        <!-- <constructor-arg name="name" value="Mehmet" />
         <constructor-arg name="laptop" ref="laptop" />-->
     </bean>
-    <bean id="computer" class="com.mehmetsukrukavak.Laptop" primary="true">
+    <bean id="laptop" class="com.mehmetsukrukavak.Laptop" primary="true">
     </bean>
-    <bean id="desktop" class="com.mehmetsukrukavak.Desktop">
+    <bean id="desktop" class="com.mehmetsukrukavak.Desktop" lazy-init="true">
     </bean>
 </beans>

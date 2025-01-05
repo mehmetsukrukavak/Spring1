@@ -2,7 +2,7 @@ package com.mehmetsukrukavak;
 
 public class Laptop implements Computer {
     public Laptop() {
-        System.out.println("Laptop Created.");
+        System.out.println("Laptop Object Created.");
     }
 
 
