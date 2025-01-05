@@ -8,6 +8,7 @@
 <!--    <bean id="alien" class="com.mehmetsukrukavak.Alien" scope="prototype"></bean>-->
     <bean id="alien" class="com.mehmetsukrukavak.Alien">
         <property name="age" value="18"></property>
+        <property name="laptop" ref="laptop"></property>
     </bean>
     <bean id="laptop" class="com.mehmetsukrukavak.Laptop">
     </bean>
